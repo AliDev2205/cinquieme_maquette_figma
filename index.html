@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positivus - Digital Marketing Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="vendor/css/style.css">
+</head>
+
+<body class="bg-white">
+ <!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center animate-fadeInUp">
+        <img src="img/logo2.svg" alt="Positivus" class="h-8 floating-element"> 
+        <span class="text-2xl font-bold text-black ml-2">Positivus</span>
+      </div>
+
+      <!-- Navigation Desktop -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#" class="text-gray-700 hover:text-black transition-colors nav-link relative">About us</a>
+        <a href="#" class="text-gray-700 hover:text-black transition-colors nav-link relative">Services</a>
+        <a href="#" class="text-gray-700 hover:text-black transition-colors nav-link relative">Use Cases</a>
+        <a href="#" class="text-gray-700 hover:text-black transition-colors nav-link relative">Pricing</a>
+        <a href="#" class="text-gray-700 hover:text-black transition-colors nav-link relative">Blog</a>
+        <button class="btn-gradient text-white px-6 py-2 rounded-full font-medium">
+          Request a quote
+        </button>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg z-50">
+      <div class="px-4 pt-2 pb-4 space-y-4">
+        <a href="#" class="block text-gray-700 hover:text-black transition-colors">About us</a>
+        <a href="#" class="block text-gray-700 hover:text-black transition-colors">Services</a>
+        <a href="#" class="block text-gray-700 hover:text-black transition-colors">Use Cases</a>
+        <a href="#" class="block text-gray-700 hover:text-black transition-colors">Pricing</a>
+        <a href="#" class="block text-gray-700 hover:text-black transition-colors">Blog</a>
+        <button class="w-full btn-gradient text-white px-6 py-2 rounded-full">
+          Request a quote
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-gradient max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 rounded-bl-[100px] rounded-br-[100px]">
+  <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <!-- Left Content -->
+    <div class="space-y-8 animate-fadeInUp">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+        Navigating the<br>
+        <span class="text-lime-400">digital landscape</span><br>
+        <span class="text-white">for success</span>
+      </h1>
+
+      <p class="text-lg text-lime-100 max-w-lg">
+        Our digital marketing agency helps businesses grow and succeed online through a range of services including
+        SEO, PPC, social media marketing, and content creation.
+      </p>
+
+      <button class="btn-lime text-white px-8 py-4 rounded-full text-lg font-medium animate-pulse-once">
+        Book a consultation
+      </button>
+    </div>
+
+    <!-- Right Illustration -->
+    <div class="relative h-96 lg:h-[500px] mt-8 lg:mt-0">
+      <img src="img/Illustration (1).svg" alt="Animation digitale" class="w-full h-full object-contain floating-element"> 
+    </div>
+  </div>
+</section>
+
+<!-- Client Logos -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 lg:gap-16 text-[#33475B] animate-fadeInUp">
+    <!-- Amazon -->
+    <img src="img/amazon.svg" style="color: #33475B;" alt="Amazon" class="h-6 sm:h-8 floating-element-delay"> 
+    
+    <!-- Dribbble -->
+    <img src="img/dribble.svg" alt="Dribbble" class="h-6 sm:h-8 floating-element-delay" style="animation-delay: 0.2s;"> 
+    
+    <!-- HubSpot -->
+    <img src="img/hubspot.svg" alt="HubSpot" class="h-6 sm:h-8 floating-element-delay" style="animation-delay: 0.4s;"> 
+    
+    <!-- Notion -->
+    <img src="img/notion.svg" alt="Notion" class="h-6 sm:h-8 floating-element-delay" style="animation-delay: 0.6s;">
+    
+    <!-- Netflix -->
+    <img src="img/netflix.svg" alt="Netflix" class="h-6 sm:h-8 floating-element-delay" style="animation-delay: 0.8s;"> 
+    
+    <!-- Zoom -->
+    <img src="img/zoom.svg" alt="Zoom" class="h-6 sm:h-8 floating-element-delay" style="animation-delay: 1s;"> 
+  </div>
+</section>
+  
+  <!-- Services Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="mb-12">
+      <div class="section-title bg-lime-400 text-black px-4 py-2 rounded text-3xl sm:text-4xl font-bold mb-6 animate-fadeInUp">
+        Services
+      </div>
+      <p class="text-lg text-gray-600 max-w-3xl animate-fadeInUp">
+        At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These
+        services include:
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Search Engine Optimization -->
+      <div class="bg-white card-hover rounded-3xl p-6 sm:p-8 border-2 border-gray-100">
+        <div class="flex justify-between items-start mb-6 sm:mb-8">
+          <div>
+            <div class="inline-block bg-lime-100 text-black px-3 py-2 rounded text-xl sm:text-2xl font-bold mb-4">
+              Search engine optimization
+            </div>
+          </div>
+          <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+            <img src="img/Illustration 1.png" alt="SEO Illustration" class="w-full h-full object-contain floating-element">
+          </div>
+        </div>
+        <button class="flex items-center text-black font-medium">
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l10-10M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          Learn more
+        </button>
+      </div>
+
+      <!-- Pay-per-click Advertising -->
+      <div class="bg-lime-50 card-hover rounded-3xl p-6 sm:p-8 border-2 border-lime-100">
+        <div class="flex justify-between items-start mb-6 sm:mb-8">
+          <div>
+            <div class="inline-block bg-white text-black px-3 py-2 rounded text-xl sm:text-2xl font-bold mb-4">
+              Pay-per-click advertising
+            </div>
+          </div>
+          <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+            <img src="img/Illustration 2.png" alt="PPC Illustration" class="w-full h-full object-contain floating-element" style="animation-delay: 0.2s;">
+          </div>
+        </div>
+        <button class="flex items-center text-black font-medium">
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l10-10M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          Learn more
+        </button>
+      </div>
+
+      <!-- Social Media Marketing -->
+      <div class="bg-gray-900 card-hover rounded-3xl p-6 sm:p-8 border-2 border-gray-800">
+        <div class="flex justify-between items-start mb-6 sm:mb-8">
+          <div>
+            <div class="inline-block bg-white text-black px-3 py-2 rounded text-xl sm:text-2xl font-bold mb-4">
+              Social Media Marketing
+            </div>
+          </div>
+          <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+            <img src="img/Illustration 3.png" alt="Social Media Illustration" class="w-full h-full object-contain floating-element" style="animation-delay: 0.4s;">
+          </div>
+        </div>
+        <button class="flex items-center text-white font-medium">
+          <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l10-10M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          Learn more
+        </button>
+      </div>
+
+      <!-- Email Marketing -->
+      <div class="bg-white card-hover rounded-3xl p-6 sm:p-8 border-2 border-gray-100">
+        <div class="flex justify-between items-start mb-6 sm:mb-8">
+          <div>
+            <div class="inline-block bg-lime-100 text-black px-3 py-2 rounded text-xl sm:text-2xl font-bold mb-4">
+              Email Marketing
+            </div>
+          </div>
+          <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+            <img src="img/Illustration 4.png" alt="Email Illustration" class="w-full h-full object-contain floating-element" style="animation-delay: 0.6s;">
+          </div>
+        </div>
+        <button class="flex items-center text-black font-medium">
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l10-10M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          Learn more
+        </button>
+      </div>
+
+      <!-- Content Creation -->
+      <div class="bg-lime-50 card-hover rounded-3xl p-6 sm:p-8 border-2 border-lime-100">
+        <div class="flex justify-between items-start mb-6 sm:mb-8">
+          <div>
+            <div class="inline-block bg-white text-black px-3 py-2 rounded text-xl sm:text-2xl font-bold mb-4">
+              Content Creation
+            </div>
+          </div>
+          <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+            <img src="img/Illustration 5.png" alt="Content Illustration" class="w-full h-full object-contain floating-element" style="animation-delay: 0.8s;">
+          </div>
+        </div>
+        <button class="flex items-center text-black font-medium">
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l10-10M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          Learn more
+        </button>
+      </div>
+
+      <!-- Analytics and Tracking -->
+      <div class="bg-gray-900 card-hover rounded-3xl p-6 sm:p-8 border-2 border-gray-800">
+        <div class="flex justify-between items-start mb-6 sm:mb-8">
+          <div>
+            <div class="inline-block bg-lime-400 text-black px-3 py-2 rounded text-xl sm:text-2xl font-bold mb-4">
+              Analytics and Tracking
+            </div>
+          </div>
+          <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+            <img src="img/Illustration 6.png" alt="Analytics Illustration" class="w-full h-full object-contain floating-element" style="animation-delay: 1s;">
+          </div>
+        </div>
+        <button class="flex items-center text-white font-medium">
+          <div class="w-8 h-8 bg-lime-400 rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l10-10M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          Learn more
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="pattern-bg bg-gray-50 rounded-3xl p-6 sm:p-8 lg:p-12 border-2 border-lime-100">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="space-y-6 animate-fadeInUp">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-black leading-tight">
+            Let's make things happen
+          </h2>
+
+          <p class="text-lg text-gray-600 max-w-lg">
+            Contact us today to learn more about how our digital marketing services can help your business grow and
+            succeed online.
+          </p>
+
+          <button
+            class="btn-gradient text-white px-8 py-4 rounded-full text-lg font-medium">
+            Get your free proposal
+          </button>
+        </div>
+
+        <!-- Right Illustration -->
+        <div class="flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <div class="w-full max-w-md floating-element">
+            <img src="img/Illustration 7.svg" alt="Illustration" class="w-full h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="mb-12">
+      <div class="section-title bg-lime-400 text-black px-4 py-2 rounded text-3xl sm:text-4xl font-bold mb-6 animate-fadeInUp">
+        Case Studies
+      </div>
+      <p class="text-lg text-gray-600 max-w-4xl animate-fadeInUp">
+        Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
+      </p>
+    </div>
+
+    <!-- Case Studies Container -->
+    <div class="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-6 sm:p-8 lg:p-12 border-2 border-gray-800">
+      <div class="grid lg:grid-cols-3 gap-8 lg:gap-12 relative">
+        <!-- Case Study 1 -->
+        <div class="space-y-6 animate-fadeInUp">
+          <p class="text-white text-base leading-relaxed">
+            For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website
+            traffic and a 25% increase in sales.
+          </p>
+          <button class="flex items-center text-lime-400 font-medium hover:text-lime-300 transition-colors">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="hidden lg:block w-px bg-white opacity-20 absolute left-[33.33%] top-0 bottom-0"></div>
+
+        <!-- Case Study 2 -->
+        <div class="space-y-6 animate-fadeInUp" style="animation-delay: 0.2s;">
+          <p class="text-white text-base leading-relaxed">
+            For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key
+            keywords and a 200% increase in organic traffic.
+          </p>
+          <button class="flex items-center text-lime-400 font-medium hover:text-lime-300 transition-colors">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="hidden lg:block w-px bg-white opacity-20 absolute left-[66.66%] top-0 bottom-0"></div>
+
+        <!-- Case Study 3 -->
+        <div class="space-y-6 animate-fadeInUp" style="animation-delay: 0.4s;">
+          <p class="text-white text-base leading-relaxed">
+            For a national retail chain, we created a social media marketing campaign that increased followers by 25%
+            and generated a 20% increase in online sales.
+          </p>
+          <button class="flex items-center text-lime-400 font-medium hover:text-lime-300 transition-colors">
+            Learn more
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Working Process Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="mb-12">
+      <div class="section-title bg-lime-400 text-black px-4 py-2 rounded text-3xl sm:text-4xl font-bold mb-6 animate-fadeInUp">
+        Our Working Process
+      </div>
+      <p class="text-lg text-gray-600 max-w-4xl animate-fadeInUp">
+        Step-by-Step Guide to Achieving Your Business Goals
+      </p>
+    </div>
+
+    <!-- Process Steps -->
+    <div class="space-y-4 sm:space-y-6">
+      <!-- Step 1 - Consultation (Opened) -->
+      <div class="bg-gradient-to-r from-lime-400 to-lime-300 rounded-3xl border-2 border-lime-500 animate-fadeInUp">
+        <div class="p-6 sm:p-8">
+          <div class="flex justify-between items-center mb-4 sm:mb-6">
+            <div class="flex items-center">
+              <span class="text-4xl sm:text-5xl font-bold text-black mr-4 sm:mr-6">01</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-black">Consultation</h3>
+            </div>
+            <button
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center border-2 border-black hover:bg-gray-100 transition-colors">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+              </svg>
+            </button>
+          </div>
+          <hr class="border-black border-t-2 mb-4 sm:mb-6">
+          <p class="text-black text-base leading-relaxed">
+            During the initial consultation, we will discuss your business goals and objectives, target audience, and
+            current marketing efforts. This will allow us to understand your needs and tailor our services to best fit
+            your requirements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2 - Research and Strategy Development (Closed) -->
+      <div class="bg-white card-hover rounded-3xl border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.1s;">
+        <div class="p-6 sm:p-8">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <span class="text-4xl sm:text-5xl font-bold text-black mr-4 sm:mr-6">02</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-black">Research and Strategy Development</h3>
+            </div>
+            <button
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-full flex items-center justify-center border-2 border-black hover:bg-gray-200 transition-colors">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 - Implementation (Closed) -->
+      <div class="bg-white card-hover rounded-3xl border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.2s;">
+        <div class="p-6 sm:p-8">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <span class="text-4xl sm:text-5xl font-bold text-black mr-4 sm:mr-6">03</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-black">Implementation</h3>
+            </div>
+            <button
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-full flex items-center justify-center border-2 border-black hover:bg-gray-200 transition-colors">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 - Monitoring and Optimization (Closed) -->
+      <div class="bg-white card-hover rounded-3xl border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.3s;">
+        <div class="p-6 sm:p-8">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <span class="text-4xl sm:text-5xl font-bold text-black mr-4 sm:mr-6">04</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-black">Monitoring and Optimization</h3>
+            </div>
+            <button
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-full flex items-center justify-center border-2 border-black hover:bg-gray-200 transition-colors">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5 - Reporting and Communication (Closed) -->
+      <div class="bg-white card-hover rounded-3xl border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.4s;">
+        <div class="p-6 sm:p-8">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <span class="text-4xl sm:text-5xl font-bold text-black mr-4 sm:mr-6">05</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-black">Reporting and Communication</h3>
+            </div>
+            <button
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-full flex items-center justify-center border-2 border-black hover:bg-gray-200 transition-colors">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 6 - Continual Improvement (Closed) -->
+      <div class="bg-white card-hover rounded-3xl border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.5s;">
+        <div class="p-6 sm:p-8">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <span class="text-4xl sm:text-5xl font-bold text-black mr-4 sm:mr-6">06</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-black">Continual Improvement</h3>
+            </div>
+            <button
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-full flex items-center justify-center border-2 border-black hover:bg-gray-200 transition-colors">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="mb-12">
+      <div class="section-title bg-lime-400 text-black px-4 py-2 rounded text-3xl sm:text-4xl font-bold mb-6 animate-fadeInUp">
+        Team
+      </div>
+      <p class="text-lg text-gray-600 max-w-4xl animate-fadeInUp">
+        Meet the skilled and experienced team behind our successful digital marketing strategies
+      </p>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <!-- John Smith -->
+      <div class="bg-white card-hover rounded-3xl p-6 border-2 border-gray-100 animate-fadeInUp">
+        <div class="flex justify-between items-start mb-4 sm:mb-6">
+          <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-lime-100 rounded-full flex items-center justify-center overflow-hidden">
+              <img src="img/Picture.svg" alt="John Smith" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-black">John Smith</h3>
+              <p class="text-gray-600 text-sm sm:text-base">CEO and Founder</p>
+            </div>
+          </div>
+          <!-- LinkedIn Icon -->
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 border-t-2 mb-4 sm:mb-6">
+
+        <p class="text-black text-sm leading-relaxed">
+          10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
+        </p>
+      </div>
+
+      <!-- Jane Doe -->
+      <div class="bg-white card-hover rounded-3xl p-6 border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.1s;">
+        <div class="flex justify-between items-start mb-4 sm:mb-6">
+          <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-lime-100 rounded-full flex items-center justify-center overflow-hidden">
+              <img src="img/Picture 1.svg" alt="Jane Doe" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-black">Jane Doe</h3>
+              <p class="text-gray-600 text-sm sm:text-base">Director of Operations</p>
+            </div>
+          </div>
+          <!-- LinkedIn Icon -->
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 border-t-2 mb-4 sm:mb-6">
+
+        <p class="text-black text-sm leading-relaxed">
+          7+ years of experience in project management and team leadership. Strong organizational and communication
+          skills
+        </p>
+      </div>
+
+      <!-- Michael Brown -->
+      <div class="bg-white card-hover rounded-3xl p-6 border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.2s;">
+        <div class="flex justify-between items-start mb-4 sm:mb-6">
+          <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-lime-100 rounded-full flex items-center justify-center overflow-hidden">
+              <img src="img/Picture 2.svg" alt="Michael Brown" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-black">Michael Brown</h3>
+              <p class="text-gray-600 text-sm sm:text-base">Senior SEO Specialist</p>
+            </div>
+          </div>
+          <!-- LinkedIn Icon -->
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 border-t-2 mb-4 sm:mb-6">
+
+        <p class="text-black text-sm leading-relaxed">
+          5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization
+        </p>
+      </div>
+
+      <!-- Emily Johnson -->
+      <div class="bg-white card-hover rounded-3xl p-6 border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.3s;">
+        <div class="flex justify-between items-start mb-4 sm:mb-6">
+          <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-lime-100 rounded-full flex items-center justify-center overflow-hidden">
+              <img src="img/Picture 3.svg" alt="Emily Johnson" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-black">Emily Johnson</h3>
+              <p class="text-gray-600 text-sm sm:text-base">PPC Manager</p>
+            </div>
+          </div>
+          <!-- LinkedIn Icon -->
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 border-t-2 mb-4 sm:mb-6">
+
+        <p class="text-black text-sm leading-relaxed">
+          3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis
+        </p>
+      </div>
+
+      <!-- Brian Williams -->
+      <div class="bg-white card-hover rounded-3xl p-6 border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.4s;">
+        <div class="flex justify-between items-start mb-4 sm:mb-6">
+          <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-lime-100 rounded-full flex items-center justify-center overflow-hidden">
+              <img src="img/Picture 4.svg" alt="Brian Williams" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-black">Brian Williams</h3>
+              <p class="text-gray-600 text-sm sm:text-base">Social Media Specialist</p>
+            </div>
+          </div>
+          <!-- LinkedIn Icon -->
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 border-t-2 mb-4 sm:mb-6">
+
+        <p class="text-black text-sm leading-relaxed">
+          4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing
+          metrics, and building engagement
+        </p>
+      </div>
+
+      <!-- Sarah Kim -->
+      <div class="bg-white card-hover rounded-3xl p-6 border-2 border-gray-100 animate-fadeInUp" style="animation-delay: 0.5s;">
+        <div class="flex justify-between items-start mb-4 sm:mb-6">
+          <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-lime-100 rounded-full flex items-center justify-center overflow-hidden">
+              <img src="img/Picture 5.svg" alt="Sarah Kim" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-black">Sarah Kim</h3>
+              <p class="text-gray-600 text-sm sm:text-base">Content Creator</p>
+            </div>
+          </div>
+          <!-- LinkedIn Icon -->
+          <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 border-t-2 mb-4 sm:mb-6">
+
+        <p class="text-black text-sm leading-relaxed">
+          2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for
+          various industries
+        </p>
+      </div>
+    </div>
+
+    <!-- Bouton mobile -->
+    <div class="mt-8 text-center">
+      <button class="bg-gray-900 text-white text-base sm:text-lg font-medium hover:bg-gray-800 transition-colors py-4 px-6 rounded-xl">
+        See all team
+      </button>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="mb-12">
+      <div class="section-title bg-lime-400 text-black px-4 py-2 rounded text-3xl sm:text-4xl font-bold mb-6 animate-fadeInUp">
+        Testimonials
+      </div>
+      <p class="text-lg text-gray-600 max-w-4xl animate-fadeInUp">
+        Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
+      </p>
+    </div>
+
+    <!-- Testimonials Container -->
+    <div class="bg-gradient-to-br from-gray-900 to-black rounded-[45px] p-6 sm:p-8 lg:p-12 relative overflow-hidden" style="background-color: #191A23;">
+      <!-- Testimonials Slider -->
+      <div class="relative">
+        <!-- Testimonial Cards Container -->
+        <div class="flex transition-transform duration-500 ease-in-out" id="testimonials-slider">
+
+          <!-- Testimonial 1 (Active) -->
+          <div class="w-full flex-shrink-0 px-2 sm:px-4">
+            <div class="max-w-4xl mx-auto text-center">
+              <!-- Speech Bubble -->
+              <div class="relative bg-transparent border-2 border-lime-400 rounded-3xl p-6 sm:p-8 mb-6 sm:mb-8 testimonial-card">
+                <p class="text-white text-base sm:text-lg leading-relaxed">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website
+                  traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares
+                  about the success of our business. We highly recommend Positivus to any company looking to grow their
+                  online presence."
+                </p>
+                <!-- Speech bubble arrow -->
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                  <div class="w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent border-t-lime-400"></div>
+                </div>
+              </div>
+
+              <!-- Author Info -->
+              <div class="text-center">
+                <h4 class="text-lime-400 text-lg sm:text-xl font-medium mb-1">John Smith</h4>
+                <p class="text-white text-sm sm:text-base">Marketing Director at XYZ Corp</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 (Hidden) -->
+          <div class="w-full flex-shrink-0 px-2 sm:px-4">
+            <div class="max-w-4xl mx-auto text-center">
+              <!-- Speech Bubble -->
+              <div class="relative bg-transparent border-2 border-lime-400 rounded-3xl p-6 sm:p-8 mb-6 sm:mb-8 testimonial-card">
+                <p class="text-white text-base sm:text-lg leading-relaxed">
+                  "Positivus has been instrumental in transforming our digital presence. Their strategic approach to SEO
+                  and content marketing has delivered exceptional results. The team's expertise and dedication have
+                  exceeded our expectations at every turn."
+                </p>
+                <!-- Speech bubble arrow -->
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                  <div class="w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent border-t-lime-400"></div>
+                </div>
+              </div>
+
+              <!-- Author Info -->
+              <div class="text-center">
+                <h4 class="text-lime-400 text-lg sm:text-xl font-medium mb-1">Sarah Johnson</h4>
+                <p class="text-white text-sm sm:text-base">CEO at ABC Industries</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 (Hidden) -->
+          <div class="w-full flex-shrink-0 px-2 sm:px-4">
+            <div class="max-w-4xl mx-auto text-center">
+              <!-- Speech Bubble -->
+              <div class="relative bg-transparent border-2 border-lime-400 rounded-3xl p-6 sm:p-8 mb-6 sm:mb-8 testimonial-card">
+                <p class="text-white text-base sm:text-lg leading-relaxed">
+                  "The ROI we've achieved through Positivus's campaigns has been remarkable. Their data-driven approach
+                  and creative solutions have helped us reach new audiences and drive significant growth in our online
+                  sales."
+                </p>
+                <!-- Speech bubble arrow -->
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                  <div class="w-0 h-0 border-l-4 border-r-4 border-t-8 border-transparent border-t-lime-400"></div>
+                </div>
+              </div>
+
+              <!-- Author Info -->
+              <div class="text-center">
+                <h4 class="text-lime-400 text-lg sm:text-xl font-medium mb-1">Michael Brown</h4>
+                <p class="text-white text-sm sm:text-base">E-commerce Manager at DEF Store</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navigation Controls -->
+      <div class="flex justify-center items-center mt-8 sm:mt-12 space-x-6 sm:space-x-8">
+        <!-- Previous Button -->
+        <button id="prev-btn"
+          class="w-10 h-10 sm:w-12 sm:h-12 bg-transparent border-none text-white hover:text-lime-400 transition-colors">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <!-- Dots Indicator -->
+        <div class="flex space-x-2">
+          <button class="w-3 h-3 rounded-full bg-lime-400 dot-indicator active" data-slide="0"></button>
+          <button class="w-3 h-3 rounded-full bg-gray-600 dot-indicator" data-slide="1"></button>
+          <button class="w-3 h-3 rounded-full bg-gray-600 dot-indicator" data-slide="2"></button>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-btn"
+          class="w-10 h-10 sm:w-12 sm:h-12 bg-transparent border-none text-white hover:text-lime-400 transition-colors">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Us Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="mb-12">
+        <div class="section-title bg-lime-400 text-black px-4 py-2 rounded text-3xl sm:text-4xl font-bold mb-6 animate-fadeInUp">
+            Contact Us
+        </div>
+        <p class="text-lg text-gray-600 max-w-4xl animate-fadeInUp">
+            Connect with Us: Let's Discuss Your Digital Marketing Needs
+        </p>
+    </div>
+
+    <!-- Conteneur principal avec fond gris -->
+    <div class="bg-gradient-to-br from-gray-50 to-white rounded-3xl overflow-hidden border-2 border-gray-200">
+        <div class="grid lg:grid-cols-2 gap-0 items-start">
+            <!-- Formulaire -->
+            <div class="p-6 sm:p-8">
+                <!-- Radio buttons -->
+                <div class="flex gap-6 mb-6 sm:mb-8">
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <div class="relative">
+                            <input type="radio" name="contact-type" value="say-hi" class="sr-only" checked>
+                            <div class="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center">
+                                <div class="w-3 h-3 bg-lime-400 rounded-full hidden"></div>
+                            </div>
+                        </div>
+                        <span class="text-gray-900 font-medium">Say Hi</span>
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <div class="relative">
+                            <input type="radio" name="contact-type" value="quote" class="sr-only">
+                            <div class="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center">
+                                <div class="w-3 h-3 bg-lime-400 rounded-full hidden"></div>
+                            </div>
+                        </div>
+                        <span class="text-gray-900 font-medium">Get a Quote</span>
+                    </label>
+                </div>
+
+                <form class="space-y-4 sm:space-y-6 contact-form">
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name" class="block text-gray-900 font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name"
+                            class="w-full px-4 py-3 bg-white rounded-xl focus:outline-none placeholder-gray-400">
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-gray-900 font-medium mb-2">
+                            Email<span class="text-red-500">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Email" required
+                            class="w-full px-4 py-3 bg-white rounded-xl focus:outline-none placeholder-gray-400">
+                    </div>
+
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="block text-gray-900 font-medium mb-2">
+                            Message<span class="text-red-500">*</span>
+                        </label>
+                        <textarea id="message" name="message" rows="4" placeholder="Message" required
+                            class="w-full px-4 py-3 bg-white rounded-xl focus:outline-none placeholder-gray-400 resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full btn-gradient text-white py-3 sm:py-4 px-6 rounded-xl font-medium">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Conteneur d'image avec padding réduit à droite -->
+            <div class="flex justify-end h-full">
+                <div class="w-full floating-element">
+                    <img src="img/Illustration 8.svg" 
+                         alt="Illustration" 
+                         class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Top Section - Logo, Navigation & Social -->
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6 mb-8 sm:mb-12">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="img/logo1.svg" alt="Positivus" class="h-8 floating-element">
+                    <span class="text-2xl font-bold ml-2">Positivus</span>
+                </div>
+                
+                <!-- Navigation Links -->
+                <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 mt-6 lg:mt-0">
+                    <a href="#" class="text-white hover:text-lime-400 transition-colors underline nav-link">About us</a>
+                    <a href="#" class="text-white hover:text-lime-400 transition-colors underline nav-link">Services</a>
+                    <a href="#" class="text-white hover:text-lime-400 transition-colors underline nav-link">Use Cases</a>
+                    <a href="#" class="text-white hover:text-lime-400 transition-colors underline nav-link">Pricing</a>
+                    <a href="#" class="text-white hover:text-lime-400 transition-colors underline nav-link">Blog</a>
+                </nav>
+                
+                <!-- Social Media Icons -->
+                <div class="flex gap-4 mt-6 lg:mt-0">
+                    <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 hover:bg-lime-400 transition-colors">
+                        <i class="fab fa-linkedin-in text-sm"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 hover:bg-lime-400 transition-colors">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 hover:bg-lime-400 transition-colors">
+                        <i class="fab fa-twitter text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Middle Section - Contact Info & Newsletter -->
+            <div class="grid lg:grid-cols-2 gap-8 items-start">
+                <!-- Contact Information -->
+                <div class="flex flex-col sm:flex-row gap-8 items-start">
+                    <div>
+                        <div class="inline-block bg-lime-400 text-black px-3 py-1 rounded font-bold mb-4">
+                            Contact us:
+                        </div>
+                        <div class="space-y-2 text-gray-300">
+                            <p>Email: info@positivus.com</p>
+                            <p>Phone: 555-567-8901</p>
+                        </div>
+                         <div class="text-gray-300 mt-8 sm:mt-0">
+                        <p>Address: 1234 Main St</p>
+                        <p>Moonstone City, Stardust State 12345</p>
+                    </div>
+                    </div>
+                   
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="bg-gray-800 rounded-2xl p-6 sm:p-8">
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <input 
+                            type="email" 
+                            placeholder="Email"
+                            class="flex-1 px-4 py-3 bg-transparent border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-lime-400 focus:border-transparent"
+                            required
+                        >
+                        <button 
+                            type="submit"
+                            class="bg-lime-400 text-black px-6 py-3 rounded-xl font-medium hover:bg-lime-500 transition-colors whitespace-nowrap"
+                        >
+                            Subscribe to news
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="border-t border-gray-700 mt-8 sm:mt-12 pt-6 sm:pt-8">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
+                    <p>© 2023 Positivus. All Rights Reserved.</p>
+                    <a href="#" class="underline hover:text-white transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="vendor/js/script.js"></script>
+</body>
+
+</html>
